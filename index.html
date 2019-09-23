@@ -1,0 +1,119 @@
+<html>
+  <head>
+
+    <title>Chinese Zodiac</title>
+<style>
+   body{
+        background-image: url("background.jpg");
+      }
+</style>
+
+    <script>
+        function yearCheck()
+        {
+          var year = document.getElementById("msg").value;
+          year = parseInt(year);
+          if (year % 12 == 0)
+          {
+            var Monkey = "<img src = 'Monkey.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = Monkey;
+          }
+
+
+          if (year % 12 == 1)
+          {
+            var  Rooster = "<img src = 'Rooster.jpeg' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = Rooster;
+          }
+
+
+          if (year % 12 == 2)
+          {
+            var dog = "<img src = 'dog.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = dog;
+          }
+
+
+
+          if (year % 12 == 3)
+          {
+            var pig = "<img src = 'pig.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = pig;
+          }
+
+
+
+          if (year % 12 == 4)
+          {
+            var rat = "<img src = 'rat.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = rat;
+          }
+
+
+
+          if (year % 12 == 5)
+          {
+            var Ox = "<img src = 'ox.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = Ox;
+          }
+
+
+
+          if (year % 12 == 6)
+          {
+            var tiger = "<img src = 'tir.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = tiger;
+          }
+
+
+
+          if (year % 12 == 7)
+          {
+            var rabbit = "<img src = 'rabbit.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = rabbit;
+          }
+
+
+
+          if (year % 12 == 8)
+          {
+            var Dragon = "<img src = 'dragon.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = Dragon;
+          }
+
+
+
+          if (year % 12 == 9)
+          {
+            var Snake = "<img src = 'snake.webp' height = '100px' width = '100px'>";
+              document.getElementById('sign').innerHTML = Snake;
+          }
+
+
+
+          if (year % 12 == 10)
+          {
+            var Horse = "<img src = 'horse.webp' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = Horse;
+          }
+
+
+
+          if (year % 12 == 11)
+          {
+            var Goat = "<img src = 'goat.jpg' heaight = '100px' width = '100px'>";
+            document.getElementById('sign').innerHTML = Goat;
+          }
+
+       }
+
+    </script>
+  </head>
+  <body>
+    <span id = "sign"></span>
+    <input id = "msg" type = "text">
+    <input type = "button" value = "Send" onclick = "yearCheck()">
+    <span id = "out"></span>
+
+  </body>
+</html>
